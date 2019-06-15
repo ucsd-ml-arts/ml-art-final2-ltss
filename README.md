@@ -50,5 +50,7 @@ Runs on the datahub.
 ## Reference
 
 [Pytorch implementation of CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) 
+
 [Pytorch implementation of CartoonGAN](https://github.com/znxlwm/pytorch-CartoonGAN)
+
 [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004.pdf) 
