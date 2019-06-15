@@ -1,6 +1,7 @@
 # Final Project
 
 Lucas Tindall, ltindall@ucsd.edu
+
 Samuel Sunarjo, ssunarjo@eng.ucsd.edu 
 
 ## Abstract Proposal
