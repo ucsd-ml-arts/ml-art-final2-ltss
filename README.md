@@ -10,7 +10,7 @@ In this project we build a system for real time translation of human faces to ca
 
 ## Project Report
 
-Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/133H59WZBmH6MlAgFSskFLMQITeIC5d9b2iuzsOfa4E8/edit?usp=sharing).
+[Report Link](ECE_188_Final_Report.pdf)
 
 ## Model/Data
 
@@ -32,13 +32,13 @@ The datasets we used for training can be found in the following repositories
 - camera_gen.py
 ```bash
 cd pytorch-CycleGAN-and-pix2pix
-python.exe camera_gen.py --dataroot . --load_size 129 --crop_size 128 --no_dropout --gpu_ids -1
+python camera_gen.py --dataroot . --load_size 129 --crop_size 128 --no_dropout --gpu_ids -1
 ```
 
 - generate.py
 ```bash
 cd pytorch-CycleGAN-and-pix2pix
-python.exe generate.py  --dataroot . --load_size 140 --crop_size 128 --no_dropout --gpu_ids -1
+python generate.py  --dataroot . --load_size 140 --crop_size 128 --no_dropout --gpu_ids -1
 ```
 
 ## Results
