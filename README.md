@@ -29,8 +29,17 @@ The datasets we used for training can be found in the following repositories
 
 ## Code
 
-- camera_gen.py 
-- generate.py 
+- camera_gen.py
+```bash
+cd pytorch-CycleGAN-and-pix2pix
+python.exe camera_gen.py --dataroot . --load_size 129 --crop_size 128 --no_dropout --gpu_ids -1
+```
+
+- generate.py
+```bash
+cd pytorch-CycleGAN-and-pix2pix
+python.exe generate.py  --dataroot . --load_size 140 --crop_size 128 --no_dropout --gpu_ids -1
+```
 
 ## Results
 
