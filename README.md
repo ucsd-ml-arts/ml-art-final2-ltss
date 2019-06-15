@@ -14,12 +14,10 @@ In this project we build a system for real time translation of human faces to ca
 
 ## Model/Data
 
-Briefly describe the files that are included with your repository:
 
-- CycleGAN folder
-- CartoonGAN folder 
-
-- checkpoint model files 
+- [CycleGAN](pytorch-CycleGAN-and-pix2pix) - Folder containing the Pytorch implementation of CycleGAN written by [junyanz](https://github.com/junyanz)
+- [CartoonGAN](pytorch-CartoonGAN) - Folder containing the Pytorch implementation of CartoonGAN written by [znxlwm](https://github.com/znxlwm)  
+- [model checkpoints](pytorch-CycleGAN-and-pix2pix/checkpoints) - Model files used in the generation scripts below. 
 
 The datasets we used for training can be found in the following repositories
 - [CaVI Dataset](https://github.com/lsaiml/CaVINet): includes the real human faces used in all models and the hand drawn caricatures
@@ -29,13 +27,13 @@ The datasets we used for training can be found in the following repositories
 
 ## Code
 
-- camera_gen.py
+- [camera_gen.py](pytorch-CycleGAN-and-pix2pix/camera_gen.py) - Script to overlay transformations on a web cam video feed. 
 ```bash
 cd pytorch-CycleGAN-and-pix2pix
 python camera_gen.py --dataroot . --load_size 129 --crop_size 128 --no_dropout --gpu_ids -1
 ```
 
-- generate.py
+- [generate.py](pytorch-CycleGAN-and-pix2pix/generate.py) - Script to generate transformations on a static image. 
 ```bash
 cd pytorch-CycleGAN-and-pix2pix
 python generate.py  --dataroot . --load_size 140 --crop_size 128 --no_dropout --gpu_ids -1
@@ -43,24 +41,14 @@ python generate.py  --dataroot . --load_size 140 --crop_size 128 --no_dropout --
 
 ## Results
 
-Documentation of your results in an appropriate format, both links to files and a brief description of their contents:
-- What you include here will very much depend on the format of your final project
-  - image files (`.jpg`, `.png` or whatever else is appropriate)
-  - 3d models
-  - movie files (uploaded to youtube or vimeo due to github file size limits)
-  - audio files
-  - ... some other form
+[WebCam video](output.avi) - An example video(.avi) of the webcam feed overlayed with the cartoon style transformations.  
 
 ## Technical Notes
 
-Any implementation details or notes we need to repeat your work. 
-- Does this code require other pip packages, software, etc?
-- Does it run on some other (non-datahub) platform? (CoLab, etc.)
+Runs on the datahub. 
 
 ## Reference
 
-References to any papers, techniques, repositories you used:
-- Papers
-- Repositories
-- Blog posts
-
+[Pytorch implementation of CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) 
+[Pytorch implementation of CartoonGAN](https://github.com/znxlwm/pytorch-CartoonGAN)
+[Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004.pdf) 
